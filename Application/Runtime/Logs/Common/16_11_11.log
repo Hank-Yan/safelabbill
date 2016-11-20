@@ -1,0 +1,12 @@
+[ 2016-11-11T21:03:46+08:00 ] ::1 /safelabbill/Public/css/images/pattern.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000226s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002658s ]
+ERR: 无法加载模块:Public
+
+[ 2016-11-11T21:04:15+08:00 ] ::1 /safelabbill/Public/css/images/pattern.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002996s ]
+ERR: 无法加载模块:Public
+

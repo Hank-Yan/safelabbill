@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<load href="__PUBLIC__/Css/bootstrap.css" />-->
+        <load href="__PUBLIC__/Js/jquery.js" />
+        <!--<load href="__PUBLIC__/Js/bootstrap.js" />-->
+        <load href="__PUBLIC__/CSS/chosen.min.css" />
+        <load href="__PUBLIC__/Js/chosen.js" />
+        <script>
+            $(function(){
+               $("#test").chosen({width: "50%"});
+            });
+            
+            
+            
+            function ajax_gen_log(){
+                lastvalue = $("#lastvalue").val();
+//                alert('lastvalue: '+ lastvalue);
+                var newvalue = "";
+                var value = $("#test").val();
+                for(var item in value){
+                        var temp = value[item]+"|";
+                        newvalue += temp;
+                }
+                //这个0用于初始化数组，不然array_diff 函数不起作用
+                final_new_value = '0|'+ newvalue.substring(0, newvalue.length-1);
+                $("#lastvalue").val(final_new_value);
+//                alert("newvalue: "+final_new_value);
+                $.get('__URL__/diffvalue',{'lastvalue':lastvalue,'newvalue':final_new_value},function(data){
+                     alert(data);
+                });
+            }
+            
+            function gen_log(){
+               
+                lastvalueArray = new Array();
+                newvalueArray = new Array();
+                lastvalue = $("#lastvalue").val();
+               
+//                alert('lastvalue: '+ lastvalue);
+                var newvalue = "";
+                var value = $("#test").val();
+                for(var item in value){
+                        var temp = value[item]+"|";
+                        newvalue += temp;
+                }
+                //这个0用于初始化数组，不然array_diff 函数不起作用
+                temp_new_value = newvalue.substring(0, newvalue.length-1);
+                $("#final_value").val(temp_new_value);
+                final_new_value = '0|'+ temp_new_value;
+                
+                 if(final_new_value == '0|'){
+                    final_new_value = '0';
+                }
+                $("#lastvalue").val(final_new_value);
+//                alert('newvalue: '+ final_new_value);
+                
+                
+                lastvalueArray = lastvalue.split("|");
+                newvalueArray = final_new_value.split("|");
+                
+                if(lastvalueArray.length<newvalueArray.length){
+                    //添加
+                    value = my_diff(lastvalueArray,newvalueArray);
+                    template = $("#test option[value='"+value+"']").text();
+                    alert("添加了"+template);
+                }else{
+                    //删除
+                    value = my_diff(newvalueArray,lastvalueArray);
+                    template = $("#test option[value='"+value+"']").text();
+                    alert("删除了"+template);
+                }
+             
+            }
+            
+           
+            
+            //比较两个数组,arr1需要比arr2短
+            //最终返回的就是 id
+            function my_diff(arr1, arr2){
+                
+                for(var i=0;i<arr2.length;i++){
+                    
+                    for (var j=0;j<arr1.length;j++){
+                        
+                        if(arr2[i]==arr1[j]){
+                            arr2.splice(i,1);
+                        }
+                    }
+                }
+                //alert('变化的值为'+arr2[0]);
+                return arr2[0];
+                
+            }
+            
+            function test(){
+               var value = $("#test option[value='3']").text();
+              alert(value) ;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="hidden" name="lastvalue" id="lastvalue" value="0"/>
+        <input type="text" name="final_value" id="final_value" />
+        <select name="test" id="test" onchange="gen_log()" multiple>
+            <option value="1">Test1</option>
+            <option value="2">Test2</option>
+            <option value="3">Test3</option>
+            <option value="4">Test4</option>
+            <option value="5">Test5</option>
+            <option value="6">Test6</option>
+        </select>
+    </body>
+</html>

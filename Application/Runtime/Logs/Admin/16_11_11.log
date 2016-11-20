@@ -1,0 +1,273 @@
+[ 2016-11-11T21:03:42+08:00 ] ::1 /safelabbill/index.php/Admin/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000300s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002964s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `tp_user` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_role` WHERE `role_id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `tp_auth` WHERE ( auth_level = '0' and auth_id in (1,2,4,5) )  [ RunTime:0.0189s ]
+SQL: SELECT * FROM `tp_auth` WHERE ( auth_level = '1' and auth_id in (1,2,4,5) )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009106s ]
+
+[ 2016-11-11T21:03:42+08:00 ] ::1 /safelabbill/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000167s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000510s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001901s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005240s ]
+
+[ 2016-11-11T21:03:46+08:00 ] ::1 /safelabbill/index.php/Admin/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+
+[ 2016-11-11T21:03:46+08:00 ] ::1 /safelabbill/index.php/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001243s ]
+NOTIC: [8] Undefined variable: errorInfo C:\codefile\xampp\htdocs\safelabbill\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002398s ]
+
+[ 2016-11-11T21:03:46+08:00 ] ::1 /safelabbill/index.php/Admin/Public/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000174s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002892s ]
+NOTIC: [8] Undefined index: l C:\codefile\xampp\htdocs\safelabbill\Application\Admin\Controller\PublicController.class.php 第 11 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002420s ]
+
+[ 2016-11-11T21:03:58+08:00 ] ::1 /safelabbill/index.php/Admin/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000166s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002415s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0439s ]
+SQL: SELECT * FROM `tp_user` WHERE ( username = 'admin' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-11T21:03:59+08:00 ] ::1 /safelabbill/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000368s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005423s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `tp_user` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `tp_role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `tp_auth` WHERE ( auth_level = 0 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tp_auth` WHERE ( auth_level = 1 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000922s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002825s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009246s ]
+
+[ 2016-11-11T21:03:59+08:00 ] ::1 /safelabbill/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000536s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001024s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002334s ]
+
+[ 2016-11-11T21:04:04+08:00 ] ::1 /safelabbill/index.php/Admin/Index/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002721s ]
+ERR: 非法操作:showlist
+
+[ 2016-11-11T21:04:05+08:00 ] ::1 /safelabbill/index.php/Admin/Role/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000228s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002426s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `tp_role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000524s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003485s ]
+
+[ 2016-11-11T21:04:09+08:00 ] ::1 /safelabbill/index.php/Admin/Role/distribute/roleid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003574s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `tp_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_auth` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_auth` WHERE ( auth_level = 0 )  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tp_auth` WHERE ( auth_level = 1 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002586s ]
+
+[ 2016-11-11T21:04:11+08:00 ] ::1 /safelabbill/index.php/Admin/Auth/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000181s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002691s ]
+ERR: 无法加载控制器:Auth
+
+[ 2016-11-11T21:04:13+08:00 ] ::1 /safelabbill/index.php/Admin/Role/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000163s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002665s ]
+SQL: SHOW COLUMNS FROM `tp_role` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `tp_role`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000455s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003719s ]
+
+[ 2016-11-11T21:04:14+08:00 ] ::1 /safelabbill/index.php/Admin/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000312s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002505s ]
+
+[ 2016-11-11T21:04:15+08:00 ] ::1 /safelabbill/index.php/Admin/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000164s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] Undefined variable: errorInfo C:\codefile\xampp\htdocs\safelabbill\Application\Runtime\Cache\Admin\041185b974292283d2f6098acc3220ec.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002435s ]
+
+[ 2016-11-11T21:04:15+08:00 ] ::1 /safelabbill/index.php/Admin/Public/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000261s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003250s ]
+NOTIC: [8] Undefined index: l C:\codefile\xampp\htdocs\safelabbill\Application\Admin\Controller\PublicController.class.php 第 11 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003650s ]
+

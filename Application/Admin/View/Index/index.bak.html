@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>首页</title>
+    <include file="Public/headsource" />
+</head>
+<body class="no-skin">
+    <!--上导航-->
+<include file="Public/header" />
+<div class="main-container" id="main-container">
+
+    <!--左侧导航-->
+    <include file="Public/left" />
+
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- #section:basics/content.breadcrumbs -->
+            <div class="breadcrumbs" id="breadcrumbs">
+
+                <ul class="breadcrumb">
+                    <li>
+                        <i class="ace-icon fa fa-home home-icon"></i>
+                        <a href="#">后台</a>
+                    </li>
+                    <li class="active">账单审核</li>
+                </ul><!-- /.breadcrumb -->
+                <div class="page-content" id="content">
+                    <iframe src="{:U('Main/index')}" style="width:100%;height: 100%;" frameborder="0" id="appiframe-0" class="appiframe"></iframe>
+                       <!--下脚注-->
+                     <include file="Public/footer" />
+                </div>
+            </div>       
+        </div>  <!--end main-content-inner-->      
+    </div> <!--end main-content-->
+
+ 
+   
+</div>
+ <!--js 资源文件-->
+    <include file="Public/footsource" />
+</body>
+</html>

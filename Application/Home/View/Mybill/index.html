@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>我的账单</title>
+    <load href="__PUBLIC__/Css/bootstrap.css" />
+    <load href="__PUBLIC__/Css/base.css" />
+    <load href="__PUBLIC__/Js/jquery.js" />
+    <load href="__PUBLIC__/Js/bootstrap.js" />
+    <script>
+        $(function () {
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="__MODULE__/Index/index">首页</a>
+                    </li>
+                    <li class="active">
+                        <a href="__MODULE__/Mybill/index">我的账单</a>
+                    </li>
+                    <li>
+                        <a href="__MODULE__/Aboutme/index">关于</a>
+                    </li>
+                    <li class="dropdown pull-right">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">欢迎：<{$Think.session.username}> <strong class="caret"></strong></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">个人中心</a>
+                            </li>
+
+                            <li class="divider">
+                            </li>
+                            <li>
+                                <a href="__MODULE__/Login/do_logout" target="_top">退出</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+
+                        <div class="panel panel-default panel-to-top">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    我的账单
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>报账明细</th>
+                                            <th>金额</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <if condition="$isEmpty eq true">
+                                        <tr>
+                                            <td><span style="color:red">您还没有审核通过的账单哦~</span></td>
+                                        </tr>
+                                        <else />
+                                        <foreach name="list" item="vo"  key="k">   
+                                            <tr>
+                                                <td><{$k+1}></td>
+                                                <td><{$vo.info}></td>
+                                                <td><{$vo.count}></td>
+                                            </tr>
+                                        </foreach>
+                                    </if>
+                                    </tbody>
+                                </table>
+
+                                <!--下面是分页控件位置信息，可以放在左面，右面和中间。学习一下-->
+                                <div style="text-align: right">
+                                    <ul class="pagination">
+                                        <{$page}>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>  <!--end container-->
+            <script>
+//                function edit(id){
+//                //alert(id);
+//                window.location.href = "__URL__/edit?id=" + id;
+//                }
+//
+//                function deleteItem(id){
+//
+//                if (confirm("确定删除吗？")){
+//                window.location.href = "__URL__/delete?id=" + id; //用js 进行跳转操作,也可以使用ajax
+//                //注意，使用 ajax 的时候，根据返回回来的值，进行window.location.reload();操作来刷新页面
+//                }
+
+//                    alert(id);
+//                    alert("确定要删除吗？？？");
+//                    $.post('__URL__/delete', {'id': id}//这里我们没必要使用ajax, 完全可以使用连接来进行
+//                    function (data) {
+//                        var myjson='';
+//                        eval("myjson=" + data + ";");//现在 myjson 就相当于data
+//                        
+//                        if(myjson == 0){
+//                            
+//                        }else{
+
+//                        }
+//                    }
+//                     );
+//                }
+            </script>
+            </body>
+            </html>

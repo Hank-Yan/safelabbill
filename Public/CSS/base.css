@@ -1,0 +1,17 @@
+body{
+    margin-top: 30px;
+}
+
+.panel-to-top{
+    margin-top: 40px;
+}
+
+.form-to-top{
+    margin-top:40px;
+}
+
+.a-cursor{
+    cursor: pointer;
+}
+
+.vcodeimg{display: inline-block;width:50px;height:35px; vertical-align: middle;margin: 0px 0px 0px 30px;*display:inline;*zoom:1;}
